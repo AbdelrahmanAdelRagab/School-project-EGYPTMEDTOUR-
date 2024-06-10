@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Turismo reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./figures/kma.png" />
+  <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
+  <link rel="stylesheet" href="css/style.css" media="screen" />
+  <title>EgyptMedTour -to heal</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="navigation">
+        <div class="logo">EgyptMedTour</div>
+        <img src="img/nav-icon.svg" class="nav-icon" alt="navigation icon" width="30" height="30" />
+        <ul>
+          <li>
+            <a href="#home"> Home </a>
+          </li>
+          <li>
+            <a href="#about"> About </a>
+          </li>
+          <li>
+            <a href="#tours"> Tours </a>
+          </li>
+          <li>
+            <a href="#offers"> Offers </a>
+          </li>
+          <li>
+            <button class="btn">Book Now</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION HERO -->
+    <section class="section-hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="heading heading--1 margin-bottom">
+            Heal mind, body, and soul in Egypt’s ancient embrace.
+          </h1>
+          <button class="btn">Heal now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SEARCH -->
+    <section class="section-search">
+      <div class="container search-box">
+        <div class="wrapper">
+          <h3>Destination</h3>
+          <div class="custom-select">
+            <select>
+              <option value="england">Bahariya Oasis</option>
+              <option value="france">Kharga Oasis
+              </option>
+              <option value="italy">Aswan City
+              </option>
+              <option value="india">Siwa Oasis
+              </option>
+              <option value="india">Ras Sedr (Sinai)
+              </option>
+              <option value="maldives">Moses Pool (Tor Sinai)
+              </option>
+            </select>
+            <span class="arrow"></span>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <h3>Date</h3>
+          <div class="custom-date">
+            <input type="date" id="date" />
+            <img src="./img/calendar.svg" alt="" class="calender-icon" />
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <h3>Average Price</h3>
+          <div class="custom-select">
+            <select>
+              <option value="$200">$200 - $500</option>
+              <option value="$500">$500 - $1000</option>
+              <option value="$1000">$1000 - $2000</option>
+            </select>
+            <span class="arrow"></span>
+          </div>
+        </div>
+        <button class="btn">Search</button>
+      </div>
+    </section>
+
+    <!-- SECTION ABOUT -->
+    <section class="section-about" id="about">
+      <div class="container about-box" data-aos="fade-up">
+        <div class="about-box__heading">
+          <h3 id="abt" class="color-blue margin-bottom">Get to know us :</h3>
+          <div class="heading heading--1 capitalize">
+            Explore yourself by exploring Egypt
+          </div>
+        </div>
+        <div class="about-box__content">
+          <p class="margin-bottom">
+            Egypt, with its ancient wonders and modern healthcare, beckons travelers seeking healing of mind, body, and
+            soul. From the mineral-rich oases of Bahariya and Kharga to the serene banks of the Nile in Aswan, Egypt
+            offers therapeutic landscapes. Ras Sedr’s Red Sea coast and the mystical Moses Pool provide natural
+            remedies. Benefits include affordable treatments, skilled medical professionals, and a blend of history and
+            rejuvenation.
+
+            Remember, Egypt’s legacy of healing awaits those who seek it
+          </p>
+          <button class="btn btn--secondary">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TOURS -->
+    <section class="section-tours" id="tours">
+      <div class="container tour-box" data-aos="fade-up">
+        <header class="tour-box__heading">
+          <h2 class="heading heading--2 color-blue margin-bottom">
+            our top tours
+          </h2>
+          <p>
+            Egypt’s medical tourism offers healing in serene oases (Bahariya, Kharga), Aswan’s Nile banks, Siwa’s mystical springs, Sinai’s Ras Sedr coast, and Moses Pool. 
+          </p>
+        </header>
+
+        <article class="tour-box__cards">
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="./figures/Bahariya Oasis" alt="england" width="500" height="500" class="t-card__img" />
+
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">Bahariya Oasis</h3>
+                <p class="price">$500</p>
+              </div>
+
+              <div class="t-card__description">
+                Bahariya Oasis: Egypt’s rich oasis, surrounded by mountains and springs </div>
+
+              <div class="t-card__items">
+                <div class="days">5 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.9k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="./figures/khargiaOasis.jpg" alt="france" width="500" height="500" class="t-card__img" />
+
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">Kharga Oasis</h3>
+                <p class="price">$500</p>
+              </div>
+
+              <div class="t-card__description">
+                Nestled amidst mountains, Bahariya Oasis boasts natural springs and lush greenery. It’s a serene escape for healing and rejuvenation.
+              </div>
+
+              <div class="t-card__items">
+                <div class="days">6 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.9k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="./figures/aswan.webp" alt="ITALY" width="500" height="500" class="t-card__img" />
+
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">Aswan City</h3>
+                <p class="price">$500</p>
+              </div>
+
+              <div class="t-card__description">
+                Along the tranquil banks of the Nile, Aswan offers a soothing environment. Explore the Philae Temple and Nubian villages while receiving medical care.
+              </div>
+
+              <div class="t-card__items">
+                <div class="days">3 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.8k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="./figures/Siwa-Oasis-of-Egypt.jpg" alt="india" width="500" height="500" class="t-card__img" />
+
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">Siwa Oasis</h3>
+                <p class="price">$500</p>
+              </div>
+
+              <div class="t-card__description">
+                Remote and mystical, Siwa Oasis is famous for its Oracle of Amun and natural springs. Seek both physical and spiritual healing here.
+              </div>
+
+              <div class="t-card__items">
+                <div class="days">7 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.8k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="./figures/ras sidr.jpg" alt="spain" width="500" height="500" class="t-card__img" />
+
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">Ras Sedr (Sinai)</h3>
+                <p class="price">$400</p>
+              </div>
+
+              <div class="t-card__description">
+                Ras Sedr’s Red Sea coast provides pristine beaches and mineral-rich mud. Enjoy relaxation and water activities while benefiting from the sea’s therapeutic properties
+              </div>
+
+              <div class="t-card__items">
+                <div class="days">5 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.7k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="./figures/moses.jpg" alt="maldives" width="500" height="500" class="t-card__img" />
+
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">Moses Pool (Tor Sinai)</h3>
+                <p class="price">$300</p>
+              </div>
+
+              <div class="t-card__description">
+                According to tradition, Moses bathed in this natural pool during the Exodus. Surrounded by rugged mountains, it’s a serene spot for reflection and renewal.
+              </div>
+
+              <div class="t-card__items">
+                <div class="days">2 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.8k
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION OFFER -->
+    <section class="section-offer" id="offers">
+      <div class="container offer-box">
+        <div class="offer-box__percentage" data-aos="zoom-in">50%</div>
+        <div class="offer-box__content" data-aos="fade-up">
+          <h2 class="heading heading--2">
+            Special Offer this month on our premium tours $250 Reguler $500
+          </h2>
+          <p>
+            Medical tourism in Egypt combines world-class healthcare with the allure of ancient wonders. Quality treatments, affordable costs, and warm hospitality await amidst the rich historical tapestry. Explore Egypt’s healing legacy
+          </p>
+          <button class="btn">book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION REVIEW -->
+    <section class="section-review">
+      <div class="container review-box" data-aos="fade-up">
+        <header class="review-header">
+          <h3 class="color-blue">Our Reviews</h3>
+          <h2 class="heading heading--2">What the people say about us</h2>
+        </header>
+
+        <article class="review-cards">
+          <div class="r-card">
+            <img src="img/user-1.jpg" alt="" class="r-card__img" width="90" height="90" />
+            <div class="r-card__name">ANDROW</div>
+            <span class="quot">&#8223;</span>
+            <div class="r-card__description">
+              Egypt: Enigmatic treasures, ancient wonders, and unforgettable experiences await..
+            </div>
+            <div class="r-card__rating">
+              <img src="img/star-grp.svg" alt="star" width="100" height="30" />
+            </div>
+          </div>
+
+          <div class="r-card">
+            <img src="img/user-2.jpg" alt="" class="r-card__img" width="90" height="90" />
+            <div class="r-card__name">LINA</div>
+            <span class="quot">&#8223;</span>
+            <div class="r-card__description">
+              Egypt’s mystique lingers, whispering tales of pharaohs and sun-kissed sands.
+            </div>
+            <div class="r-card__rating">
+              <img src="img/star-grp.svg" alt="star" width="100" height="30" />
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECTION FOOTER -->
+  <footer class="section-footer">
+    <div class="footer-box container">
+      <div class="contact-details">
+        <h2 class="heading heading--2 margin-bottom">EGYPTMEDTOUR</h2>
+        <ul class="contact-data">
+          <li class="location">King Marriott Academy - KMA</li>
+          <li class="phone">+00 000 000 00</li>
+          <li class="email">EGYPTMEDTOUR@domine.com</li>
+          <li class="social">
+            <img src="./img/logo-whatsapp.svg" alt="whatsapp icon" width="35" height="35" />
+
+            <img src="./img/logo-facebook.svg" alt="facebook icon" width="35" height="35" />
+
+            <img src="./img/logo-instagram.svg" alt="instagram icon" width="35" height="35" />
+
+            <img src="./img/logo-twitter.svg" alt="twitter icon" width="35" height="35" />
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer-nav" aria-label="navigation">
+        <div class="nav-name">Quick Links</div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#offers">Offeres</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-nav" aria-label="navigation">
+        <div class="nav-name">Popular Destination</div>
+        <ul>
+          <li><a href="#tours">Bahariya Oasis
+          </a></li>
+          <li><a href="#tours">Kharga Oasis</a></li>
+          <li><a href="#tours">Aswan</a></li>
+          <li><a href="#tours">Siwa Oasis</a></li>
+          <li><a href="#tours">Ras Sedr (Sinai)</a></li>
+        </ul>
+      </nav>
+
+      <div class="newsletter">
+        <div class="newsletter__title">send us your review:</div>
+        <div class="newsletter__text">
+          If you've been to Egypt we're missing you contact us again!
+        </div>
+        <form class="newsletter__input">
+          <input type="text" placeholder="example@domine.com" />
+          <img src="./img/send.svg" alt="send icon" class="send-icon" width="36" height="36" />
+        </form>
+      </div>
+
+      <div class="legel">
+        
+        <p class="text"> مشروع تخرج مجموعة b133 </p>
+        <p class="text"> تحت اشراف دكتورة : ميار مصطفي  </p>
+
+        <h5> عبدالرحمن احمد عادل ذكي رجب</h5>
+        <h5> مؤمن محمد فتحي الكومي</h5>
+        <h5>محمد اسامه محمود الدفراوي</h5>
+        <h5> طارق مجدي عبدالعزيز عبدالعزيز</h5>
+        <h5> علي محمد محمدي علي</h5>
+        <h5>باهر محمد سعد مصطفي بر </h5>
+        <h5>مؤمن عبدالرحمن عبدالوهاب عبدالرحمن  </h5>
+        <h5>عبدالرحمن مجدي عبدالقادر البسطويسي </h5>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="index.js"></script>
+</body>
+
+</html>
